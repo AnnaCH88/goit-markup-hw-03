@@ -32,8 +32,15 @@ body {
 /* Утилиты */
 ul {
     list-style: none;
-      
+    padding: 0;
+    margin: 0;
+     
 }
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -57,7 +64,7 @@ img {
 .page-header {
     
     background-color: var(--header-bg-color);
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
         
 }
 
@@ -103,16 +110,14 @@ img {
     margin-left: 93px;
 }
 
-.auth-nav {
-    display: flex;
-    margin-left: auto;
-    
-}
+
 .site-nav .item:not(:last-child) {
  margin-right: 50px;
 }
 .site-nav .link {
     display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
   
     color: var(--secondary-text-color);
     line-height: 1.14;
@@ -131,10 +136,20 @@ img {
     
 }
 
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+
+}
+
+
 .auth-nav .item + .item {
     margin-left: 50px;
     
 }
+
+
+
 
 .auth-nav .link{
     display: block;
@@ -168,7 +183,9 @@ img {
     color: var(--hero-text-color);
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;         
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+             
     text-transform: uppercase;
 }
 .hero-button {
@@ -185,6 +202,7 @@ img {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
+    letter-spacing: 0.06em;
     line-height: 1.87;
     align-items: center;
     text-align: center;
@@ -230,6 +248,7 @@ img {
     margin-bottom: 10px;
 
     color: var(--secondary-text-color);
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     
@@ -302,8 +321,8 @@ img {
 
 .position {
     margin-top: 10px;
-    margin-bottom: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    
 
     color: var(--main-text-color);
     font-size: 16px;
@@ -317,7 +336,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     
 }
 
@@ -332,11 +351,7 @@ img {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    
-    
+       
 
     color: var(--main-text-color);
     font-size: 16px;
@@ -356,10 +371,16 @@ img {
 .work-card {
     text-decoration: none;
 }
+
+.work-title {
+    padding: 20px 24px 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+
+}
 .work-list-title {
-    margin-top: 20px;
-    margin-bottom: 4px;
-    padding-left: 24px;
+    
     
     color: var(--secondary-text-color);
     font-size: 18px;
@@ -368,10 +389,7 @@ img {
     
 }
 .work-list-item {
-    margin: 0;
-    padding-left: 24px;
-    padding-bottom: 20px;
-    
+   
     color: var(--main-text-color);
     font-size: 16px;
     line-height: 1.87;
@@ -415,7 +433,7 @@ img {
 /* Footer */
 .footer {
     background-color: var(--footer-bg-color);
-    padding: 60px 60px;
+    padding: 60px 0;
 }
 
 .logo-footer {
@@ -441,7 +459,7 @@ img {
 }
 
 .address {
-    margin-left: 0;
+    
     margin-top: 20px;
     padding-inline-start: unset;
 }
